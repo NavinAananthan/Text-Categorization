@@ -17,12 +17,40 @@ Welcome to our innovative Sentence Categorization and Visualization project! Thi
 - **Visualization:**
   - Dynamic bar graph reflecting the distribution of categories/topics.
 
+## Models Used
+   - Text Classification Model : dima806/news-category-classifier-distilbert
+
 ## Getting Started
 
 ### Prerequisites
 
 - Python 3.x
 
+## Categories
+
+ - The sentences are categorized into the following topics for Text Classification Model:
+
+    - **Arts**
+    - **Health**
+    - **Entertainment**
+    - **Home**
+    - **Style**
+    - **Environment**
+    - **Business**
+    - **Positive News**
+    - **Politics**
+    - **War**
+    - **Travel**
+    - **Food**
+    - **Academics**
+    - **Technology**
+    - **Negative News**
+    - **World News**
+    - **Sports**
+    - **Religion**
+    - **Crime**
+      
+- The sentences are categorized into the following topics for Top2Vec:
 
 ### Usage
 
