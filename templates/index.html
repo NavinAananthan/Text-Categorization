@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        form {
+            margin-top: 60px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Adjust form width */
+        }
+
+        input, select, button {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 12px; /* Increase padding for larger boxes */
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px; /* Increase border-radius for rounded corners */
+            font-size: 16px; /* Increase font size */
+        }
+        
+        select{
+            padding: 8px;
+        }
+
+        select {
+            height: 40px; /* Increase height for select box */
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload a CSV file for Topic Classification</h1>
+    <form action="/perform_action" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <label for="action">Choose an action:</label>
+        <select id="action" name="action" required>
+            <option value="topic_modeling">Topic Modeling</option>
+            <option value="model_classification">Model Classification</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

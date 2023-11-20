@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        #plot-container {
+            margin-top: 20px;
+            width: 80%;  /* Adjust the width as needed */
+            max-width: 800px;  /* Set a maximum width if desired */
+            height: 500px;  /* Set a fixed height or adjust as needed */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle box shadow */
+            border-radius: 8px;  /* Add rounded corners */
+            overflow: hidden;  /* Hide overflow for a cleaner look */
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Visualization for {{ filename }}</h2>
+    <div id="plot-container">{{ plot_div|safe }}</div>
+    <br>
+    <a href="/">Go back to upload page</a>
+</body>
+</html>
