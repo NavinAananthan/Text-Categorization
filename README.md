@@ -94,6 +94,9 @@ Welcome to our innovative Sentence Categorization and Visualization project! Thi
 - Ensemble Methods: Explore combining the strengths of both methodologies.
 - User Feedback Integration: Continuously improve the system with user feedback.
 
+## Note
+- To ensure accurate predictions in the Topic Modelling method, it is imperative to supply an ample amount of data. When faced with limited data, an alternative approach involves leveraging a text classification model pretrained on news articles data.
+
 ## Screenshots
 ![image](https://github.com/NavinAananthan/Text-Categorization/assets/81963819/d2de34c8-2220-412d-a54d-5555c2325ecf)
 
